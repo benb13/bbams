@@ -11,9 +11,9 @@ Project Goal: Home Monitoring System using an Arduino and a PogoPlug ArchLinux S
 
 Features:
 
--Integration of PogoPlug ArchLinuxARM, Arduino Uno
--Support for Temperature Sensors (DS18B20)
--Email and Text Alerts for High and Low Temperatures
+-Integration of PogoPlug ArchLinuxARM, Arduino Uno<br>
+-Support for Temperature Sensors (DS18B20)<br>
+-Email and Text Alerts for High and Low Temperatures<br>
 -Bidirectional communication between PogoPlug Linux server and Arduino
 -Web access from Apple iPhone and iPad
 -Data Logging and Analysis using RRDTool
