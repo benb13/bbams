@@ -495,17 +495,19 @@ if myTempSensor == 1:
     sresult = ser.readline().strip()
     #############################################################
     # 12.12.31 - Added for splitting multiple tempsensor results
-    tMetric1, tMetric2, tMetric3 = sresult.split("|")
-    print("Temperature1: " + tMetric1)
-    print("Temperature2: " + tMetric2)
-    print("Temperature3: " + tMetric3)
+    # Comment the next line and uncomment the next 4 for 3 sensors
+    tMetric1 = sresult
+    #tMetric1, tMetric2, tMetric3 = sresult.split("|")
+    #print("Temperature1: " + tMetric1)
+    #print("Temperature2: " + tMetric2)
+    #print("Temperature3: " + tMetric3)
     #############################################################
     datasave.set('data','temperature',sresult) 
     #############################################################
     # Write to RRD Round Robin Database for analytics
     #############################################################
     #ret = rrdtool.update("/srv/arduino/ttemp.rrd","N:" + sresult)
-    ret = rrdtool.update("/srv/arduino/ttemp2.rrd", "N:" + tMetric1 + ":" +  tMetric2 + ":" + tMetric3)
+    ret = rrdtool.update("/srv/arduino/ttemp2.rrd", "N:" + tMetric1)
     if ret:
        print rrdtool.error()
     #############################################################
