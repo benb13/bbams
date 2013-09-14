@@ -4,7 +4,7 @@
 # Author:   	Benjamin Bordonaro
 # Copyright:    copyright 2012-2013   
 # Source:       http://www.benjaminbordonaro.com
-# Version:  	13.01.02
+# Version:  	13.07.22
 # Features:
 # - Graphing of Arduino Monitoring System RRDTool DB
 #######################################################
