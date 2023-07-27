@@ -40,7 +40,4 @@ Project Parts:
  -Soldering Iron<br>
  -Screwdriver<br>
 <br>
-Project Build:<br>
-Complete documentation for the project build is located at: <br>
-http://www.benjaminbordonaro.com/bb/page/Arduino-Monitoring-System-with-PogoPlug-and-ArchLinux.aspx<br>
 
